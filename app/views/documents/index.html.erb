@@ -1,0 +1,10 @@
+<div>
+  <h1>Documents</h1>
+  <form action="/documents/search" method="GET" class="search-group">
+    <input type="text" name="query" class="txt-search" value="">
+    <input type="submit" value="Search" class="btn btn-primary btn-search">
+  </form>
+  <% @documents.each do |document| %>
+    <%= link_to document.document_attachment.file.file %>
+  <% end %>
+</div>

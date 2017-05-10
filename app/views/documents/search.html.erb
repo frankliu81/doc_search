@@ -1,0 +1,6 @@
+<div>
+  <h1>Search Results</h1>
+  <% @documents.each do |document| %>
+    <%= link_to document.document_attachment.file.file %>
+  <% end %>
+</div>
